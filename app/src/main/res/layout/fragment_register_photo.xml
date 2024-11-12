@@ -48,7 +48,7 @@
 
 
             <Button
-                android:id="@+id/register_name_btn_next"
+                android:id="@+id/register_btn_next"
                 style="@style/Theme.Instagram.Button"
                 android:text="@string/add_photo"
                 android:enabled="false"

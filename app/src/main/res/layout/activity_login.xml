@@ -20,6 +20,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageView
@@ -60,6 +61,7 @@
             android:id="@+id/login_btn_enter"
             style="@style/Theme.Instagram.Button"
             android:text="@string/enter"
+            android:enabled="false"
             />
 
         <FrameLayout

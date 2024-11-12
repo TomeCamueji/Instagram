@@ -44,6 +44,8 @@ Ao clicar em Avançar, você concorda com nossos
     <string name="edit_profile">Editar perfil</string>
     <string name="username">username</string>
     <string name="invalid_email">Email inválido</string>
+    <string name="invalid_name">Nome deve ter ao menos 3 caracteres</string>
+    <string name="invalid_password">senha deve ter mais de 8 caracteres</string>
     <string name="password_not_equal">Senha e confirmar senha devem ser iguais.</string>
     <string name="save">Salvar</string>
     <string name="title_activity_add">AddActivity</string>
@@ -59,4 +61,8 @@ Ao clicar em Avançar, você concorda com nossos
     <string name="logout_action">Sair</string>
     <string name="cancel">Cancel</string>
     <string name="painel">Painel profissional\n<font Size="9">33 visualizações nos últimos 30 dias</font></string >
+    <string name="settings_activity">Config_activity</string>
+    <string name="descrition_post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam ante non massa facilisis, quis convallis nisi pulvinar. Morbi posuere quam at turpis vulputate, et condimentum erat dapibus. Praesent porttitor ex eget odio blandit pretium. Proin sit amet consequat felis. Nam sed blandit metus, quis mollis elit. Fusce congue lectus em elit vulputate finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum mi libero, ut iaculis mi ornare eu. Proin venenatis est lacus, a sollicitudin augue vehicula vel. ID inteiro ligula dolor.</string>
+    <string name="translater"> <font color="#626161">Há 4 horas</font> • <font color="#FF000000">ver tradução</font> </string>
+    <string name="codname">\@Tome_tl</string>
 </resources>

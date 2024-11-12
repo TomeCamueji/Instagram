@@ -1,4 +1,4 @@
-package com.example.instagram.view
+package com.example.instagram.commom.util
 
 import android.app.Dialog
 import android.content.Context
@@ -6,17 +6,21 @@ import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.example.instagram.R
+import com.example.instagram.databinding.DialogCustomBinding
 
 class CustomDialog(context: Context):Dialog(context) {
+    private lateinit var binding: DialogCustomBinding
+
     private lateinit var dialogLinearLayout: LinearLayout
     private lateinit var txtButtons: Array<TextView>
 
+//    private var  titleId: Int? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.dialog_custom)
+        binding = DialogCustomBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        dialogLinearLayout = findViewById(R.id.dialog_container)
+
     }
 
     fun addButton( vararg texts:Int,listener: View.OnClickListener){
@@ -35,11 +39,14 @@ class CustomDialog(context: Context):Dialog(context) {
 
     override fun show() {
         super.show()
-
+//        titleId?.let {
+//            binding.dialogTitle
+//        }
         for (textView in txtButtons){
             val layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
             layoutParams.setMargins(30,50,30,50)
-            dialogLinearLayout.addView(textView, layoutParams)
+
+            binding.dialogContainer.addView(textView, layoutParams)
         }
     }
 }

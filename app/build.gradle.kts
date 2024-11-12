@@ -30,6 +30,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        viewBinding = true
+    }
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -42,7 +45,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    implementation("com.vanniktech:android-image-cropper:4.6.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
